@@ -345,11 +345,11 @@ cp-analyzer  --task 1 2
 
 1. Reads the electrochemical data from the first five columns and computes the electrode potential versus the Standard Hydrogen Electrode ($E_U$ vs SHE ) using the function E_free_vs_SHE.
 
-2. Calculates the corresponding pH value for each data point using the Nernst relation (with $U_{RHE}=0$ V as reference):$$\mathrm{pH} = \frac{-E_{U}\ \rm vs\ SHE}{0.0592}$$where 0.0592 V is the Nernst factor (2.303 RT/F) at 298 K.
+2. Calculates the corresponding pH value for each data point using the Nernst relation (with $U_{RHE}=0$ V as reference): $$\mathrm{pH} = \frac{-E_{U}\ \rm vs\ SHE}{0.0592}$$ where 0.0592 V is the Nernst factor (2.303 RT/F) at 298 K.
 
 3. Uses the user-provided dQ value (sixth column) for that data point.
 
-4. Collects pairs of (𝑝𝐻, 𝑑𝑄) for each surface state and performs a third-order polynomial fitting:$$\mathrm{d}Q(\mathrm{pH}) = a \cdot \mathrm{pH}^3 + b \cdot \mathrm{pH}^2 + c \cdot \mathrm{pH} + d$$
+4. Collects pairs of (𝑝𝐻, 𝑑𝑄) for each surface state and performs a third-order polynomial fitting: $$\mathrm{d}Q(\mathrm{pH}) = a \cdot \mathrm{pH}^3 + b \cdot \mathrm{pH}^2 + c \cdot \mathrm{pH} + d$$
 
 5. Generates fitting curves, predicted dQ values over pH = 0–14, and saves the corresponding figures and data tables.
 
