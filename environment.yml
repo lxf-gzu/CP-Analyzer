@@ -1,0 +1,12 @@
+name: cp-analyzer
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - pip
+  - pip:
+    - git+https://github.com/lxf-gzu/CP-Analyzer.git
